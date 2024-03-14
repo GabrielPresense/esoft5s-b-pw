@@ -75,6 +75,7 @@
       background-color: #343a40;
       padding: 10px;
       margin-bottom: 20px;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -100,6 +101,7 @@
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
+      flex-wrap: wrap;
     }
 
     article {
@@ -121,13 +123,18 @@
       text-decoration: none;
     }
 
+    .img {
+      flex-wrap: wrap;
+    }
+
     .lupa::marker {
       content: "🔍";
     }
 
     .div-img-evolution {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
     .img-evolution {
@@ -136,6 +143,7 @@
       text-align: center;
       color: black;
       text-decoration: none;
+      flex-wrap: wrap;
     }
 
     nav a:hover {
@@ -150,8 +158,16 @@
       opacity: 0.8;
     }
 
+    .rodape {
+      flex-wrap: wrap;
+    }
+
     footer a:hover {
       opacity: 0.8;
+    }
+
+    footer {
+      flex-wrap: wrap;
     }
   </style>
 </head>
@@ -173,7 +189,7 @@
   </nav>
 
   <main>
-    <section id="info-squirtle" aria-labelledby="info-squirtle-label">
+    <section id="info-squirtle" aria-labelledby="info-squirtle-label" flexbox-center>
       <h2 id="info-squirtle-label">Informações sobre Squirtle</h2>
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
         alt="Squirtle - Pokémon do tipo Água" />
@@ -269,7 +285,7 @@
     </section>
   </main>
 
-  <footer aria-label="Rodapé" style="clear: both">
+  <footer aria-label="Rodapé" class="rodape">
     <p aria-label="Copyright" style="color: white">
       &copy; 2024 Página do Pokémon Squirtle. Todos os direitos reservados.
     </p>
