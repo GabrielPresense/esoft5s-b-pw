@@ -118,11 +118,23 @@ nav a:hover {
   content: '🔍';
 }
 
+.curiosidades{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 #evolucao ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
+}
+
+.img-info{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #evolucao img {
@@ -158,8 +170,10 @@ footer {
   background-color: #343a40;
   color: #fff;
   padding: 20px;
-  text-align: center;
-  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
 }
 
 footer a {
