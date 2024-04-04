@@ -111,6 +111,14 @@ nav a {
   transition: color 0.3s ease-in-out;
 }
 
+section a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+script{}
+
 nav a:hover {
   color: #ffc107;
 }
@@ -148,6 +156,11 @@ nav a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
+}
+
+section img{
+  height: 150px;
+  width: 150px;
 }
 
 #evolucao img {
